@@ -1,0 +1,16 @@
+{
+  "name": "dev_template",
+  "version": "1.0.0",
+  "description": "Boilerplate for development",
+  "main": "./src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "boilerplate",
+    "template",
+    "frontend"
+  ],
+  "author": "SenyaLimonov",
+  "license": "ISC"
+}
