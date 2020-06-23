@@ -12,7 +12,7 @@
     "lint": "concurrently \"npm run lint:js\" \"npm run lint:css\"  \"npm run lint:html\"",
     "predeploy": "npm run build",
     "deploy": "./deploy.sh",
-    "test": "jest ./src"
+    "test": "jest ./src/main.test.js"
   },
   "keywords": [
     "boilerplate",
@@ -27,7 +27,7 @@
     "@mate-academy/linthtml-config": "0.0.1",
     "@mate-academy/stylelint-config": "0.0.9",
     "concurrently": "^5.2.0",
-    "eslint": "^7.3.0",
+    "eslint": "^7.3.1",
     "eslint-plugin-jest": "^23.17.0",
     "eslint-plugin-node": "^11.1.0",
     "husky": "^4.2.5",
