@@ -1,3 +1,4 @@
-const b = (a, b) => a + b;
+const sum = (a, b) => a + b;
 
-console.log(b(1,2));
+// eslint-disable-next-line no-console
+console.log(sum(1, 2));
