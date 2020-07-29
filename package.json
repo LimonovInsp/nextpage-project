@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Boilerplate for development",
   "main": "./src/index.html",
-  "homepage": "https://limonovinsp.github.io/nextpage-project/",
   "scripts": {
     "build": "rm -rf ./dist && parcel build ./src/index.html --public-url ./",
     "start": "parcel ./src/index.html --open",
