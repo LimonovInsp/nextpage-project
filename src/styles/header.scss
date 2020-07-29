@@ -1,0 +1,140 @@
+
+.header {
+  background: $main-gradient;
+  padding: 39px 55px;
+  display: flex;
+  flex-direction: column;
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 188px;
+  }
+  
+  &_logo {
+    color: #d2132a;
+    font-size: 32px;
+  }
+
+  &_logo:hover {
+    cursor: url("../images/cursor-white.png"), pointer;
+  }
+
+  &_callback {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &_circles {
+    width: 18px;
+    height: 18px;
+  }
+
+  &_contacts {
+    font-size: 12px;
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #ffeff6;
+    margin-right: 22px;
+  }
+
+  &_perspective {
+    position: relative;
+    -webkit-perspective: 1113px;
+    perspective: 1113px;
+    perspective-origin: center;
+    -webkit-perspective-origin: center;
+    z-index: 1;
+  }
+
+  &_picture {
+    position: absolute;
+  }
+
+  &_image__headphone {
+    width: 143px;
+    height: 196px;
+  }
+
+  &_presentation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-bottom: 300px;
+    transform-style: preserve-3d;
+  }
+
+  &_presentation:after {
+    content: url("../images/lettering.png");
+    position: absolute;
+    z-index: 2;
+    left: 52%;
+    top: 33%;
+    transform: translateX(-52%);
+  }
+
+  &_notation {
+    font-family: "Archivo", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #f9a608;
+  }
+
+  &_headline {
+    position: relative;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 170px;
+    line-height: 185px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffeff6;
+    z-index: 1;
+  }
+
+  &_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_reference {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #643c5a;
+    margin-bottom: 11px;
+  }
+
+  &_score {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #f6f6f6;
+  }
+
+  &_viewers {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #f6f6f6;
+    margin-top: 9px;
+  }
+}

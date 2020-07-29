@@ -1,4 +1,32 @@
-const sum = (a, b) => a + b;
+import wipeEffect from './animations/wipeEffect';
+import loaderEffect from './animations/loaderEffect';
+import headphoneMoving from './animations/headphoneMoving';
+import cameraMoving from './animations/cameraMoving';
+import claquetaMoving from './animations/claquetaMoving';
+import youtubeMoving from './animations/youtubeMoving';
+import torusMoving from './animations/torusMoving';
+import noteMoving from './animations/noteMoving';
+import letteringLeftMoving from './animations/letteringLeftMoving';
+import letteringRightMoving from './animations/letteringRightMoving';
+import heartMoving from './animations/heartMoving';
+import torusIronMoving from './animations/torusIronMoving';
+import scoreIncrease from './animations/scoreIncrease';
+import headerHeadlineMoving from './animations/headerHeadlineMoving';
+import glowCursor from './animations/glowCursor';
 
-// eslint-disable-next-line no-console
-console.log(sum(1, 2));
+wipeEffect();
+loaderEffect();
+
+headphoneMoving();
+cameraMoving();
+claquetaMoving();
+youtubeMoving();
+torusMoving();
+noteMoving();
+letteringLeftMoving();
+letteringRightMoving();
+heartMoving();
+torusIronMoving();
+scoreIncrease();
+headerHeadlineMoving();
+glowCursor();

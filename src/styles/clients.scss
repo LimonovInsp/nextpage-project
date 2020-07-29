@@ -1,0 +1,163 @@
+.clients {
+  background: $main-light-color;
+  padding: 39px 55px;
+  position: relative;
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_logo {
+    color: #d2132a;
+    font-size: 32px;
+  }
+
+  &_callback {
+    display: flex;
+    align-items: center;
+  }
+
+  &_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  &_circles {
+    width: 18px;
+    height: 18px;
+  }
+
+  &_contacts {
+    font-size: 12px;
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #161415;
+    margin-right: 22px;
+  }
+
+  &_middle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_presentation {
+    width: 323px;
+  }
+
+  &_headline {
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #383030;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  &_description {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #643c5a;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 17px;
+  }
+
+  &_link {
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #d2132a;
+  }
+
+  &_gallery {
+    position: absolute;
+    top: 58px;
+    left: 40%;
+    display: flex;
+  }
+
+  &_row-left,
+  &_row-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &_row-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &_gallery_item {
+    margin-bottom: 47px;
+    margin-right: 30px;
+  }
+
+  &_row-middle &_gallery_item:last-child {
+    margin-bottom: 0;
+  }
+
+  &_picture {
+    border-radius: 5px;
+    width: 197px;
+    height: 244px;
+    margin-bottom: 12px;
+  }
+
+  &_picture-special {
+    width: 197px;
+    height: 198px;
+  }
+
+  &_picture-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_picture-juice {
+    background: #da89c6;
+  }
+
+  &_picture-popjam {
+    background: #000;
+  }
+
+  &_image-big {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &_gallery_paragraph {
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    color: #383030;
+  }
+}

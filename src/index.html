@@ -4,21 +4,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="styles/style.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
     <script type="module" src="main.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">Logo</div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">Home</li>
-          <li class="nav__item">About us</li>
-          <li class="nav__item">List</li>
-          <li class="nav__item">Info</li>
-          <li class="nav__item">Contacts</li>
-        </ul>
-      </nav>
+    <div class="loader">
+      <div class="loader_picture">
+        <img
+          src="./images/loader-headphone.png"
+          alt="loader image"
+          class="loader_image"
+        >
+      </div>
+      <span class="loader_counter">0</span>
+      <p class="loader_paragraph">Loading...</p>
+    </div>
+    <header class="header panel">
+      <div class="header_top">
+        <p class="header_logo">floaat</p>
+        <div class="header_callback">
+          <p class="header_contacts">contact us</p>
+          <img
+            src="./images/contacts-circles-group.png"
+            alt="Header circles group"
+            class="header_circles"
+          >
+        </div>
+      </div>
+      <div class="header_middle">
+        <div class="spacer s1" id="trigger"></div>
+        <div class="header_perspective">
+          <div class="header_presentation">
+            <span class="header_notation">
+              practice by sze
+            </span>
+            <h1 class="header_headline">
+              Creative
+            </h1>
+          </div>
+        </div>
+        <div class="header_picture header_picture__headphone">
+          <img
+           src="./images/loader-headphone.png"
+           alt="Headphone"
+           class="header_image header_image__headphone"
+          >
+        </div>
+        <div class="header_picture header_picture__camera">
+          <img
+           src="./images/loader-camera.png"
+           alt="Camera"
+           class="header_image header_image__camera"
+          >
+        </div>
+        <div class="header_picture header_picture__claqueta">
+          <img
+           src="./images/header-claqueta.png"
+           alt="Claqueta"
+           class="header_image header_image__claqueta"
+          >
+        </div>
+        <div class="header_picture header_picture__youtube">
+          <img
+           src="./images/header-youtube.png"
+           alt="Youtube"
+           class="header_image header_image__youtube"
+          >
+        </div>
+        <div class="header_picture header_picture__torus">
+          <img
+           src="./images/header-torus.png"
+           alt="Torus"
+           class="header_image header_image__torus"
+          >
+        </div>
+        <div class="header_picture header_picture__note">
+          <img
+           src="./images/header-note.png"
+           alt="Note"
+           class="header_image header_image__note"
+          >
+        </div>
+        <div class="header_picture header_picture__lettering-left">
+          <img
+           src="./images/header-lettering-left.png"
+           alt="Lettering-left"
+           class="header_image header_image__lettering-left"
+          >
+        </div>
+        <div class="header_picture header_picture__lettering-right">
+          <img
+           src="./images/header-lettering-right.png"
+           alt="Lettering-right"
+           class="header_image header_image__lettering-right"
+          >
+        </div>
+        <div class="header_picture header_picture__heart">
+          <img
+           src="./images/header-heart.png"
+           alt="Heart"
+           class="header_image header_image__heart"
+          >
+        </div>
+        <div class="header_picture header_picture__torus-iron">
+          <img
+           src="./images/header-torus-iron.png"
+           alt="Torus iron"
+           class="header_image header_image__torus-iron"
+          >
+        </div>
+      </div>
+      <div class="header_bottom">
+        <p class="header_reference">
+          our content has reached
+        </p>
+        <span class="header_score">
+          1 000 030 021
+        </span>
+        <p class="header_viewers">viewers</p>
+      </div>
     </header>
+    <section class="clients panel">
+      <div class="clients_top">
+        <p class="clients_logo">floaat</p>
+        <div class="clients_callback">
+          <p class="clients_contacts">contact us</p>
+          <div class="clients_circle">
+            <img
+            src="./images/contacts-circles-group.png"
+            alt="clients circles group"
+            class="clients_circles"
+          >
+          </div>
+        </div>
+      </div>
+      <div class="clients_middle">
+        <div class="clients_presentation">
+          <h1 class="clients_headline">
+            150+<br>
+            clients
+          </h1>
+          <p class="clients_description">
+            We work with some of the biggest gaming
+            entertainers & world-renowned organisations.
+          </p>
+          <a href="#" class="clients_link">view all</a>
+        </div>
+        <div class="clients_gallery">
+          <div class="clients_row-left">
+            <div class="clients_gallery_item">
+              <div class="clients_picture">
+                <img
+                  src="./images/bitmap.png"
+                  alt="bitmap"
+                  class="clients_image clients_image-big"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Liam Payne
+              </p>
+            </div>
+            <div class="clients_gallery_item">
+              <div class="clients_picture clients_picture-popjam clients_picture-brand">
+                <img
+                  src="./images/popjam.png"
+                  alt="Popjam"
+                  class="clients_image"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Popjam
+              </p>
+            </div>
+            <div class="clients_gallery_item">
+              <div class="clients_picture clients_picture-juice clients_picture-brand">
+                <img
+                  src="./images/juice.png"
+                  alt="Juice"
+                  class="clients_image"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Liam Payne
+              </p>
+            </div>
+          </div>
+          <div class="clients_row-middle">
+            <div class="clients_gallery_item">
+              <div class="clients_picture clients_picture-juice clients_picture-brand">
+                <img
+                  src="./images/juice.png"
+                  alt="Juice"
+                  class="clients_image"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Juice Burst
+              </p>
+            </div>
+            <div class="clients_gallery_item">
+              <div class="clients_picture clients_picture-outer-space">
+                <img
+                  src="./images/outer-space.png"
+                  alt="Outer space"
+                  class="clients_image clients_image-big"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Jonas Blue
+              </p>
+            </div>
+            <div class="clients_gallery_item">
+              <div class="clients_picture clients_picture-rita-ora">
+                <img
+                  src="./images/rita-ora.png"
+                  alt="Rita Ora"
+                  class="clients_image clients_image-big"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Juice Burst
+              </p>
+            </div>
+          </div>
+          <div class="clients_row-right">
+            <div class="clients_gallery_item">
+              <div class="clients_picture clients_picture-rita-ora">
+                <img
+                  src="./images/rita-ora.png"
+                  alt="Rita Ora"
+                  class="clients_image clients_image-big"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Rita Ora
+              </p>
+            </div>
+            <div class="clients_gallery_item">
+              <div class="clients_picture clients_picture-special">
+                <img
+                  src="./images/logan-paul.png"
+                  alt="logan-paul"
+                  class="clients_image clients_image-big"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Logan Paul
+              </p>
+            </div>
+            <div class="clients_gallery_item">
+              <div class="clients_picture">
+                <img
+                  src="./images/bitmap.png"
+                  alt="bitmap"
+                  class="clients_image clients_image-big"
+                >
+              </div>
+              <p class="clients_gallery_paragraph">
+                Rita Ora
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="panel green">
+      <h1>THREE</h1>
+    </section>
+    <section class="panel bordeaux">
+      <h1>FOUR</h1>
+    </section>
   </body>
 </html>

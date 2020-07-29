@@ -1,0 +1,40 @@
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: $main-gradient;
+  z-index: 999;
+  -webkit-transition: top 0.5s ease-out 0.5s;
+  -moz-transition: top 0.5s ease-out 0.5s;
+  -o-transition: top 0.5s ease-out 0.5s;
+  transition: top 0.5s;
+
+  &_picture {
+    position: absolute;
+    top: 27%;
+  }
+
+  &_counter {
+    font-size: 370px;
+    line-height: 403px;
+    color: $main-text-color;
+    text-align: center;
+    margin-bottom: 125px;
+  }
+
+  &_paragraph {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: bold;
+    font-family: "Archivo", sans-serif;
+    color: #f9a608;
+    text-transform: uppercase;
+  }
+  
+}
