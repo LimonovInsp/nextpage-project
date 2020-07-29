@@ -17,16 +17,17 @@ html {
 }
 
 .panel {
-  height: 100%;
   width: 100%;
 }
 
-.panel.green {
-  margin-bottom: 400px;
+.services {
+  position: relative;
+  width: 100%;
   background-color: green;
+  height: 100%;
 }
 
 .panel.bordeaux {
-  margin-bottom: 400px;
   background-color: red;
+  height: 100%;
 }

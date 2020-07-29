@@ -2,11 +2,14 @@
   background: $main-light-color;
   padding: 39px 55px;
   position: relative;
+  height: 120%;
+  width: 100%;
 
   &_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 69px;
   }
 
   &_logo {
@@ -91,9 +94,33 @@
 
   &_gallery {
     position: absolute;
-    top: 58px;
+    top: 70px;
     left: 40%;
     display: flex;
+  }
+
+  &_figures_item-torus {
+    position: absolute;
+    width: 244px;
+    height: 174px;
+    left: -25%;
+    top: -6%;
+  }
+
+  &_figures_item-yout {
+    position: absolute;
+    width: 148px;
+    height: 106px;
+    top: 33%;
+    right: -3%;
+  }
+
+  &_figures_item-sphere {
+    position: absolute;
+    width: 137px;
+    height: 100px;
+    bottom: 7%;
+    left: -17%;
   }
 
   &_row-left,

@@ -13,6 +13,7 @@ import torusIronMoving from './animations/torusIronMoving';
 import scoreIncrease from './animations/scoreIncrease';
 import headerHeadlineMoving from './animations/headerHeadlineMoving';
 import glowCursor from './animations/glowCursor';
+import stickyElements from './animations/stickyElements';
 
 wipeEffect();
 loaderEffect();
@@ -30,3 +31,4 @@ torusIronMoving();
 scoreIncrease();
 headerHeadlineMoving();
 glowCursor();
+stickyElements();
