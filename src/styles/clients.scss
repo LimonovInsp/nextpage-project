@@ -1,7 +1,6 @@
 .clients {
   background: $main-light-color;
   padding: 39px 55px;
-  position: relative;
   height: 120%;
   width: 100%;
 
@@ -101,26 +100,36 @@
 
   &_figures_item-torus {
     position: absolute;
-    width: 244px;
-    height: 174px;
-    left: -25%;
-    top: -6%;
+    width: 130px;
+    height: 130px;
+    left: -13%;
+    top: -5%;
+    z-index: 1;
   }
 
   &_figures_item-yout {
     position: absolute;
-    width: 148px;
-    height: 106px;
+    width: 130px;
+    height: 130px;
     top: 33%;
-    right: -3%;
+    right: -5%;
+    z-index: 1;
   }
 
   &_figures_item-sphere {
     position: absolute;
-    width: 137px;
-    height: 100px;
-    bottom: 7%;
-    left: -17%;
+    width: 130px;
+    height: 130px;
+    bottom: 2%;
+    left: -15%;
+    z-index: 1;
+  }
+
+  &_figures_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   &_row-left,
@@ -146,10 +155,81 @@
   }
 
   &_picture {
+    position: relative;
     border-radius: 5px;
     width: 197px;
     height: 244px;
     margin-bottom: 12px;
+  }
+
+  &_hover {
+    justify-content: center;
+    align-items: center;
+    background: $main-hover-gradient;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 5px;
+  }
+
+  &_hover_image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  &_hover_content {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &_hover_headline {
+    text-transform: uppercase;
+    margin-top: 38px;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.4px;
+    margin-bottom: 27px;
+  }
+
+  &_hover_viewers {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 17px;
+    letter-spacing: 0.7px;
+  }
+
+  &_hover_source {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+  }
+
+  &_hover_headline-special {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  &_hover_source-special {
+    margin-top: 40px;
+  }
+
+  &_hover_link {
+    font-family: "Archivo", sans-serif;
+    font-size: 12px;
+    line-height: 13px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 5px;
+  }
+
+  &_hover_path {
+    transition: transform 0.3s;
   }
 
   &_picture-special {

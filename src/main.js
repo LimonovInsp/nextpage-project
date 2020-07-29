@@ -14,6 +14,9 @@ import scoreIncrease from './animations/scoreIncrease';
 import headerHeadlineMoving from './animations/headerHeadlineMoving';
 import glowCursor from './animations/glowCursor';
 import stickyElements from './animations/stickyElements';
+import clientsHoverEffect from './animations/clientsHoverEffect';
+import clientsHoverLinkEffect from './animations/clientsHoverLinkEffect';
+import servicesRectangleHover from './animations/servicesRectangleHover';
 
 wipeEffect();
 loaderEffect();
@@ -32,3 +35,6 @@ scoreIncrease();
 headerHeadlineMoving();
 glowCursor();
 stickyElements();
+clientsHoverEffect();
+clientsHoverLinkEffect();
+servicesRectangleHover();

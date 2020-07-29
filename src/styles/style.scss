@@ -2,6 +2,7 @@
 @import "loader";
 @import "header";
 @import "clients";
+@import "services";
 
 body,
 html {
@@ -16,18 +17,9 @@ html {
   cursor: url("../images/cursor-red.png"), pointer;
 }
 
-.panel {
-  width: 100%;
-}
-
-.services {
+.team {
   position: relative;
+  background-color: brown;
+  height: 100%;
   width: 100%;
-  background-color: green;
-  height: 100%;
-}
-
-.panel.bordeaux {
-  background-color: red;
-  height: 100%;
 }

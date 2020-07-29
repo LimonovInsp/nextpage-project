@@ -1,0 +1,83 @@
+.services {
+  background: $main-gradient;
+  height: 100%;
+  padding: 39px 55px 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 188px;
+  }
+  
+  &_logo {
+    color: #d2132a;
+    font-size: 32px;
+  }
+
+  &_logo:hover {
+    cursor: url("../images/cursor-white.png"), pointer;
+  }
+
+  &_callback {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &_circles {
+    width: 18px;
+    height: 18px;
+  }
+
+  &_contacts {
+    font-size: 12px;
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #ffeff6;
+    margin-right: 22px;
+  }
+
+  &_headline {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+  }
+
+  &_tools_top,
+  &_tools_bottom {
+    display: flex;
+  }
+
+  &_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 173px;
+    height: 174px;
+    background: rgba(100, 60, 90, 0.2);
+    border-radius: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+
+  &_item-active {
+    background: $main-hover-gradient;
+  }
+
+  &_image {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

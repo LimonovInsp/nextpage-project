@@ -3,14 +3,17 @@ import ScrollMagic from 'scrollmagic';
 function wipeEffect() {
   const controller = new ScrollMagic.Controller();
 
-  const slides = document.querySelectorAll('.panel');
+  const team = document.querySelectorAll('team');
+  const header = document.querySelectorAll('header');
   const clients = document.querySelectorAll('.clients');
   const services = document.querySelectorAll('.services');
 
-  // eslint-disable-next-line no-unused-vars
-  const pinGreenScene = new ScrollMagic.Scene({
+  const slides = [team, header, services];
+
+  new ScrollMagic.Scene({
     triggerElement: services,
     triggerHook: 1,
+    duration: '0',
   })
     .setPin(clients, { pushFollowers: false })
     .addTo(controller);
