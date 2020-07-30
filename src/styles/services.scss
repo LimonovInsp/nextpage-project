@@ -37,6 +37,7 @@
     font-style: normal;
     font-weight: bold;
     line-height: 13px;
+    text-decoration: none;
     text-transform: uppercase;
     color: #ffeff6;
     margin-right: 22px;
@@ -53,7 +54,7 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 40px;
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     margin-bottom: 38px;
   }
@@ -109,7 +110,7 @@
     height: 108px;
     font-size: 36px;
     line-height: 46px;
-    color: #fff;
+    color: $color-white;
     white-space: pre;
   }
 

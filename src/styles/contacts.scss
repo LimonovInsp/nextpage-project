@@ -1,0 +1,49 @@
+.contacts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 18.75%;
+  background: $main-gradient;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: $main-hover-gradient;
+    transition: all 0.5s;
+    z-index: -1;
+  }
+  
+  &:hover:before {
+    width: 100%;
+  }
+
+  &_source {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &_link {
+    position: relative;
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    color: $color-white;
+    text-decoration: none;
+    margin-right: 5px;
+    z-index: 1;
+  }
+
+  &_path {
+    transition: transform 0.3s;
+  }
+}

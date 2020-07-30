@@ -17,6 +17,9 @@ import stickyElements from './animations/stickyElements';
 import clientsHoverEffect from './animations/clientsHoverEffect';
 import clientsHoverLinkEffect from './animations/clientsHoverLinkEffect';
 import servicesRectangleHover from './animations/servicesRectangleHover';
+import contactsHoverEffect from './animations/contactsHoverEffect';
+import teamSlider from './animations/teamSlider';
+import teamHoverEffect from './animations/teamHoverEffect';
 
 wipeEffect();
 loaderEffect();
@@ -38,3 +41,6 @@ stickyElements();
 clientsHoverEffect();
 clientsHoverLinkEffect();
 servicesRectangleHover();
+contactsHoverEffect();
+teamSlider();
+teamHoverEffect();

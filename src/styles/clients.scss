@@ -28,7 +28,7 @@
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $color-white;
   }
 
   &_circles {
@@ -42,6 +42,7 @@
     font-style: normal;
     font-weight: bold;
     line-height: 13px;
+    text-decoration: none;
     text-transform: uppercase;
     color: #161415;
     margin-right: 22px;
@@ -182,7 +183,7 @@
     position: absolute;
     top: 0;
     text-align: center;
-    color: #fff;
+    color: $color-white;
     font-style: normal;
     font-weight: normal;
   }
