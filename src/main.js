@@ -38,8 +38,9 @@ if (getResolution() > 1024) {
   glowCursor();
   headerHeadlineMoving();
   loaderEffect();
+  wipeEffect();
 }
-wipeEffect();
+
 scoreIncrease();
 clientsHoverEffect();
 clientsHoverLinkEffect();
