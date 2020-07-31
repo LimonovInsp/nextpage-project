@@ -1,11 +1,16 @@
+import getResolution from './getResolution';
 
 function teamSlider() {
   const buttons = document.querySelectorAll('.team_button');
   const sliderList = document.querySelector('.team_list');
 
-  const cardSize = 269;
-
   let translateX = 0;
+
+  const cardSize = getResolution() === 375
+    ? 226
+    : getResolution() === 320
+      ? 186
+      : 269;
 
   let index = 0;
 

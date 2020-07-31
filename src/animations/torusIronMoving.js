@@ -1,28 +1,31 @@
 
 import { TweenMax, TimelineMax } from 'gsap/all';
 
-const torusIronItem = document
-  .querySelector('.header_picture__torus-iron');
-
 function torusIronMoving() {
+  const torusIronItem = document
+    .querySelector('.header_picture__torus-iron');
+
   TweenMax.set(torusIronItem, {
     transform: 'translateX(40%)',
     right: '40%',
-    top: '20%',
+    top: '-10%',
   });
 
-  const animationSpeed = 5;
+  const animationSpeed = 4;
 
-  // eslint-disable-next-line no-unused-vars
-  const tween = new TimelineMax()
-    .to(torusIronItem, animationSpeed, {
-      top: '+=3%',
-    })
-    .to(torusIronItem, animationSpeed, {
-      top: '-=3%',
-    });
+  function infiniteMoving() {
+    new TimelineMax()
+      .to(torusIronItem, animationSpeed, {
+        top: '+=5%',
+      })
+      .to(torusIronItem, animationSpeed, {
+        top: '-=5%',
+      });
+  }
+
+  infiniteMoving();
+
+  setInterval(infiniteMoving, 8000);
 }
-
-setInterval(torusIronMoving, 10000);
 
 export default torusIronMoving;

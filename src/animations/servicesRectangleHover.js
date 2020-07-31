@@ -110,7 +110,7 @@ function servicesRectangleHover() {
       servicesDemonstrationImage.style.display = 'none';
       servicesContent.style.display = 'none';
 
-      void servicesDemonstrationImage.offsetWidth;
+      // void servicesDemonstrationImage.offsetWidth;
 
       setTimeout(() => {
         servicesDemonstrationImage.classList

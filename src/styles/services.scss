@@ -1,9 +1,8 @@
 .services {
   background: $main-gradient;
-  height: 100%;
+  height: 150%;
   padding: 39px 55px 0;
   width: 100%;
-  box-sizing: border-box;
 
   &_top {
     display: flex;
@@ -178,4 +177,41 @@
     opacity: 1;
   }
 
+}
+
+@media only screen and(max-width: $medium-monitor) {
+  .services {
+    &_top {
+      margin-bottom: 50px;
+    }
+
+    &_offers {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and(max-width: $medium-tablet) {
+  .services {
+    height: 200%;
+
+    &_top {
+      margin-bottom: 10px;
+    }
+
+    &_tools {
+      order: 2;
+    }
+
+    &_offers {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and(max-width: 320px) {
+  .services {
+    padding: 39px 20px 0;
+  }
 }

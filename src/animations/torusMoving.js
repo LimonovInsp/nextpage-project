@@ -1,35 +1,37 @@
 
 import { TweenMax, TimelineMax } from 'gsap/all';
 
-const torusItem = document.querySelector('.header_picture__torus');
-
 function torusMoving() {
+  const torusItem = document.querySelector('.header_picture__torus');
+
   TweenMax.set(torusItem, {
-    transform: 'translateX(20%)',
-    right: '20%',
-    top: '65%',
+    right: '10%',
+    bottom: '0',
   });
 
   const animationSpeed = 3;
 
-  // eslint-disable-next-line no-unused-vars
-  const tween = new TimelineMax()
-    .to(torusItem, animationSpeed, {
-      right: '-=5%',
-    })
-    .to(torusItem, animationSpeed, {
-      top: '-=3%',
-      right: '-=1%',
-    })
-    .to(torusItem, animationSpeed, {
-      top: '+=3%',
-      right: '+=1%',
-    })
-    .to(torusItem, animationSpeed, {
-      right: '+=5%',
-    });
-}
+  function infiniteMoving() {
+    new TimelineMax()
+      .to(torusItem, animationSpeed, {
+        right: '-=3%',
+      })
+      .to(torusItem, animationSpeed, {
+        top: '-=3%',
+        right: '-=1%',
+      })
+      .to(torusItem, animationSpeed, {
+        top: '+=3%',
+        right: '+=1%',
+      })
+      .to(torusItem, animationSpeed, {
+        right: '+=3%',
+      });
+  }
 
-setInterval(torusMoving, 12000);
+  infiniteMoving();
+
+  setInterval(infiniteMoving, 12000);
+}
 
 export default torusMoving;

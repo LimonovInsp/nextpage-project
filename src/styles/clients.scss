@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 69px;
+    height: 5.6vh;
   }
 
   &_logo {
@@ -96,6 +97,7 @@
     position: absolute;
     top: 70px;
     left: 40%;
+    width: 67.6vh;
     display: flex;
   }
 
@@ -159,7 +161,7 @@
     position: relative;
     border-radius: 5px;
     width: 197px;
-    height: 244px;
+    height: 260px;
     margin-bottom: 12px;
   }
 
@@ -267,5 +269,98 @@
     font-size: 16px;
     line-height: 17px;
     color: #383030;
+  }
+}
+
+@media only screen and(max-width: $medium-monitor) {
+  .clients {
+    height: 160%;
+
+    &_top {
+      display: block;
+    }
+
+    &_gallery {
+      left: 35%;
+    }
+  }
+}
+
+@media only screen and(max-width: $low-monitor) {
+  .clients {
+    padding: 39px 20px;
+  }
+}
+
+@media only screen and(max-width: $medium-tablet) {
+  .clients {
+    padding: 39px 55px;
+    height: 170%;
+
+    &_top {
+      display: flex;
+    }
+
+    &_presentation {
+      margin-bottom: 50px;
+    }
+
+    &_middle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &_figures {
+      display: none;
+    }
+    
+    &_gallery {
+      position: static;
+    }
+  }
+}
+
+@media only screen and(max-width: $low-tablet) {
+  .clients {
+    height: 450%;
+
+    &_top {
+      display: none;
+    }
+
+    &_presentation {
+      text-align: center;
+    }
+
+    &_middle {
+      align-items: center;
+    }
+    
+    &_gallery {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &_gallery_item {
+      margin-right: 0;
+    }
+
+    &_row-middle &_gallery_item:last-child {
+      margin-bottom: 47px;
+    }
+  }
+}
+
+@media only screen and(max-width: 375px) {
+  .clients {
+    height: 500%;
+  }
+}
+
+@media only screen and(max-width: 320px) {
+  .clients {
+    height: 580%;
   }
 }

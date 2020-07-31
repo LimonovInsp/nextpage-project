@@ -1,33 +1,29 @@
 
 import { TweenMax, TimelineMax } from 'gsap/all';
 
-const cameraItem = document.querySelector('.header_picture__camera');
-
 function cameraMoving() {
+  const cameraItem = document.querySelector('.header_picture__camera');
+
   TweenMax.set(cameraItem, {
-    transform: 'translateX(-15%)',
-    left: '15%',
-    top: '40%',
+    left: '3%',
+    top: '20%',
   });
 
   const animationSpeed = 3;
 
-  // eslint-disable-next-line no-unused-vars
-  const tween = new TimelineMax()
-    .to(cameraItem, animationSpeed, {
-      top: '+=3%',
-    })
-    .to(cameraItem, animationSpeed, {
-      top: '+=3%',
-    })
-    .to(cameraItem, animationSpeed, {
-      top: '-=3%',
-    })
-    .to(cameraItem, animationSpeed - 2, {
-      top: '-=3%',
-    });
-}
+  function infiniteMoving() {
+    new TimelineMax()
+      .to(cameraItem, animationSpeed, {
+        top: '+=20%',
+      })
+      .to(cameraItem, animationSpeed, {
+        top: '-=20%',
+      });
+  }
 
-setInterval(cameraMoving, 10000);
+  infiniteMoving();
+
+  setInterval(infiniteMoving, 6000);
+}
 
 export default cameraMoving;

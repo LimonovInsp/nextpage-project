@@ -20,27 +20,31 @@ import servicesRectangleHover from './animations/servicesRectangleHover';
 import contactsHoverEffect from './animations/contactsHoverEffect';
 import teamSlider from './animations/teamSlider';
 import teamHoverEffect from './animations/teamHoverEffect';
+import teamHoverMoving from './animations/teamHoverMoving';
+import getResolution from './animations/getResolution';
 
+if (getResolution() > 1024) {
+  headphoneMoving();
+  cameraMoving();
+  claquetaMoving();
+  youtubeMoving();
+  torusMoving();
+  noteMoving();
+  letteringLeftMoving();
+  letteringRightMoving();
+  heartMoving();
+  torusIronMoving();
+  stickyElements();
+  glowCursor();
+  headerHeadlineMoving();
+  loaderEffect();
+}
 wipeEffect();
-loaderEffect();
-
-headphoneMoving();
-cameraMoving();
-claquetaMoving();
-youtubeMoving();
-torusMoving();
-noteMoving();
-letteringLeftMoving();
-letteringRightMoving();
-heartMoving();
-torusIronMoving();
 scoreIncrease();
-headerHeadlineMoving();
-glowCursor();
-stickyElements();
 clientsHoverEffect();
 clientsHoverLinkEffect();
 servicesRectangleHover();
 contactsHoverEffect();
 teamSlider();
 teamHoverEffect();
+teamHoverMoving();

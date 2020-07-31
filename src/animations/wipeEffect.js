@@ -8,11 +8,11 @@ function wipeEffect() {
   const clients = document.querySelectorAll('.clients');
   const services = document.querySelectorAll('.services');
 
-  const slides = [team, header, services];
+  const slides = [header, services, team];
 
   new ScrollMagic.Scene({
     triggerElement: services,
-    triggerHook: 1,
+    triggerHook: 1.5,
     duration: '0',
   })
     .setPin(clients, { pushFollowers: false })
